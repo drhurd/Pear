@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>057860DD-13D3-4497-AD64-051030C9648B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Pear</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BFCDE7AE-3449-43F8-ADCA-7F5B2A2090D3</key>
+		<string>ssh://github.com/mhacks/Pear.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Pear.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BFCDE7AE-3449-43F8-ADCA-7F5B2A2090D3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/mhacks/Pear.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BFCDE7AE-3449-43F8-ADCA-7F5B2A2090D3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BFCDE7AE-3449-43F8-ADCA-7F5B2A2090D3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pear</string>
+		</dict>
+	</array>
+</dict>
+</plist>
