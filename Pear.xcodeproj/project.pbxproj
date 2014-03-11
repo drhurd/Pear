@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280F547B18CFB3B600D37CC5 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280F547A18CFB3B600D37CC5 /* Firebase.framework */; };
+		280F547D18CFB43C00D37CC5 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 280F547C18CFB43C00D37CC5 /* libicucore.dylib */; };
+		280F547F18CFB44200D37CC5 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 280F547E18CFB44200D37CC5 /* libc++.dylib */; };
+		280F548118CFB44C00D37CC5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280F548018CFB44C00D37CC5 /* CFNetwork.framework */; };
+		280F548318CFB45200D37CC5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280F548218CFB45200D37CC5 /* Security.framework */; };
+		280F548518CFB45800D37CC5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280F548418CFB45800D37CC5 /* SystemConfiguration.framework */; };
 		9D14E0DC18CFA1F8000355C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D14E0DB18CFA1F8000355C2 /* Foundation.framework */; };
 		9D14E0DE18CFA1F8000355C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D14E0DD18CFA1F8000355C2 /* CoreGraphics.framework */; };
 		9D14E0E018CFA1F8000355C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D14E0DF18CFA1F8000355C2 /* UIKit.framework */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280F547A18CFB3B600D37CC5 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		280F547C18CFB43C00D37CC5 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		280F547E18CFB44200D37CC5 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		280F548018CFB44C00D37CC5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		280F548218CFB45200D37CC5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		280F548418CFB45800D37CC5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9D14E0D818CFA1F8000355C2 /* Pear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D14E0DB18CFA1F8000355C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9D14E0DD18CFA1F8000355C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,9 +72,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280F548518CFB45800D37CC5 /* SystemConfiguration.framework in Frameworks */,
+				280F548318CFB45200D37CC5 /* Security.framework in Frameworks */,
+				280F548118CFB44C00D37CC5 /* CFNetwork.framework in Frameworks */,
+				280F547F18CFB44200D37CC5 /* libc++.dylib in Frameworks */,
+				280F547D18CFB43C00D37CC5 /* libicucore.dylib in Frameworks */,
 				9D14E0DE18CFA1F8000355C2 /* CoreGraphics.framework in Frameworks */,
 				9D14E0E018CFA1F8000355C2 /* UIKit.framework in Frameworks */,
 				9D14E0DC18CFA1F8000355C2 /* Foundation.framework in Frameworks */,
+				280F547B18CFB3B600D37CC5 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +119,12 @@
 		9D14E0DA18CFA1F8000355C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				280F548418CFB45800D37CC5 /* SystemConfiguration.framework */,
+				280F548218CFB45200D37CC5 /* Security.framework */,
+				280F548018CFB44C00D37CC5 /* CFNetwork.framework */,
+				280F547E18CFB44200D37CC5 /* libc++.dylib */,
+				280F547C18CFB43C00D37CC5 /* libicucore.dylib */,
+				280F547A18CFB3B600D37CC5 /* Firebase.framework */,
 				9D14E0DB18CFA1F8000355C2 /* Foundation.framework */,
 				9D14E0DD18CFA1F8000355C2 /* CoreGraphics.framework */,
 				9D14E0DF18CFA1F8000355C2 /* UIKit.framework */,
@@ -379,9 +403,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/billy/Projects/iOS/childish/Pear,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pear/Pear-Prefix.pch";
 				INFOPLIST_FILE = "Pear/Pear-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,9 +421,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/billy/Projects/iOS/childish/Pear,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pear/Pear-Prefix.pch";
 				INFOPLIST_FILE = "Pear/Pear-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -461,6 +495,7 @@
 				9D14E10C18CFA1F8000355C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D14E10D18CFA1F8000355C2 /* Build configuration list for PBXNativeTarget "PearTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +504,7 @@
 				9D14E10F18CFA1F8000355C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
