@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Firebase/Firebase.h>
+#import "FirebaseManager.h"
 
-@interface CHViewController : UIViewController
+@interface CHViewController : UIViewController <FirebaseManagerDelegate>
 
 
 

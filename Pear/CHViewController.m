@@ -8,6 +8,7 @@
 
 #import "CHViewController.h"
 #import <Firebase/Firebase.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface CHViewController ()
 
@@ -19,13 +20,9 @@
 {
     [super viewDidLoad];
     
-    NSString* url = @"https://pearsync.firebaseio.com/sound";
-    Firebase* dataRef = [[Firebase alloc] initWithUrl:url];
-    [dataRef observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
-        [self renderSignal:snapshot];
-    }];
+    FirebaseManager *fb = [FirebaseManager singleton];
+    [fb addDelegate:self];
 
-    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -46,19 +43,29 @@
     [f setValue:vals[index]];
 }
 
-- (void)renderSignal:(FDataSnapshot*)snapshot {
+- (void)receivedSnapshot:(FDataSnapshot *)snapshot {
     NSLog(@"snapshot: %@", snapshot);
-    if (snapshot.value) {
-        if ([snapshot.value isEqualToString:@"red"]) {
-            self.view.backgroundColor = [UIColor redColor];
-        } else if ([snapshot.value isEqualToString:@"blue"]) {
-            self.view.backgroundColor = [UIColor blueColor];
-        } else if ([snapshot.value isEqualToString:@"orange"]) {
-            self.view.backgroundColor = [UIColor orangeColor];
-        } else if ([snapshot.value isEqualToString:@"green"]) {
-            self.view.backgroundColor = [UIColor greenColor];
-        }
+    if ([snapshot.value isEqualToString:@"red"]) {
+        self.view.backgroundColor = [UIColor redColor];
+    } else if ([snapshot.value isEqualToString:@"blue"]) {
+        self.view.backgroundColor = [UIColor blueColor];
+    } else if ([snapshot.value isEqualToString:@"orange"]) {
+        self.view.backgroundColor = [UIColor orangeColor];
+    } else if ([snapshot.value isEqualToString:@"green"]) {
+        self.view.backgroundColor = [UIColor greenColor];
     }
 }
 
+
+- (void)playSound {
+    NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"test"
+                                                              ofType:@"m4a"];
+    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+    
+    AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL
+                                                                   error:nil];
+    player.numberOfLoops = -1; //Infinite
+    
+    [player play];
+}
 @end
